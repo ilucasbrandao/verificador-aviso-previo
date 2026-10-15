@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <!-- Fundo Arredondado Azul -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#2563EB" />
+  
+  <!-- Calendário (Corpo) -->
+  <rect x="14" y="20" width="36" height="30" rx="4" fill="#FFFFFF" />
+  <rect x="14" y="20" width="36" height="8" rx="2" fill="#93C5FD" />
+  
+  <!-- Argolas do Calendário -->
+  <rect x="22" y="15" width="4" height="8" rx="2" fill="#FFFFFF" />
+  <rect x="38" y="15" width="4" height="8" rx="2" fill="#FFFFFF" />
+  
+  <!-- Check / Confirmação -->
+  <path d="M24 36 L30 42 L40 30" fill="none" stroke="#16A34A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
