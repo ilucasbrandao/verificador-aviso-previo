@@ -14,6 +14,9 @@ import TabelaCorporativa from "./components/TabelaCorporativa.jsx";
 
 export default function App() {
   const [resultado, setResultado] = useState(null);
+  const handleLimpar = () => {
+    setResultado(null);
+  };
 
   const handleCalcular = ({ dataAdmissao, dataDesligamento }) => {
     const { anosCompletos, diasTotais } = calcularDiasAviso(
@@ -45,7 +48,7 @@ export default function App() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start mt-2">
           {/* Coluna Esquerda: Formulário e Resultados */}
           <section className="lg:col-span-7 space-y-3">
-            <Formulario onCalcular={handleCalcular} />
+            <Formulario onCalcular={handleCalcular} onLimpar={handleLimpar} />
 
             {resultado && (
               <div className="space-y-3 animate-fade-in">
