@@ -12,7 +12,7 @@ export const calcularDiasAviso = (dataAdmissaoStr, dataDesligamentoStr) => {
   // Regra da tabela: até 1 ano completo = 30 dias. A partir de 2 anos = 33, 3 anos = 36...
   let diasTotais = 30;
   if (anosCompletos > 1) {
-    diasTotais = 30 + anosCompletos * 3 - 3;
+    diasTotais = 30 + anosCompletos * 3;
   }
 
   if (diasTotais > 90) {
