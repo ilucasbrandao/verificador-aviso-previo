@@ -2,26 +2,28 @@ export default function Footer() {
   const anoAtual = new Date().getFullYear();
 
   return (
-    <footer className="mt-12 border-t bg-slate-800 py-6 text-slate-200 transition-colors">
-      <div className="max-w-2xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-center sm:text-left">
+    <footer className="w-full border-t border-slate-400/60 bg-white/50 py-6 mt-auto transition-colors">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-center sm:text-left">
+        {/* Identificação do Sistema */}
         <div>
-          <p className="font-medium text-slate-200">
-            Análise de Aviso Prévio Indenizado
+          <p className="font-semibold text-slate-900 tracking-tight">
+            Central do DP
           </p>
-          <p className="text-xs text-slate-400 mt-0.5">
+          <p className="text-xs text-slate-600 mt-0.5 font-medium">
             © {anoAtual} • Desenvolvido para otimização de rotinas de DP.
           </p>
         </div>
 
+        {/* Link do GitHub */}
         <div className="flex items-center gap-3">
           <a
             href="https://github.com/ilucasbrandao"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg font-medium text-xs hover:text-blue-600"
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg font-medium text-xs text-slate-900 hover:text-blue-600 hover:bg-blue-50 transition-colors"
           >
             <svg
-              className="w-4 h-4 fill-current text-slate-200"
+              className="w-4 h-4 fill-current"
               viewBox="0 0 24 24"
               aria-hidden="true"
             >
